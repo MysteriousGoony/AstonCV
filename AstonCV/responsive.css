@@ -1,0 +1,310 @@
+/* ===================================================== */
+/* ================== RESPONSIVENESS =================== */
+/* ===================================================== */
+
+
+/* ================= LARGE SCREENS ================= */
+@media (max-width: 1400px) {
+    .inner-content {
+        padding: var(--space-3) var(--space-4);
+    }
+
+    .hero-title {
+        font-size: clamp(40px, 6vw, 70px);
+    }
+
+    .teams-logo-grid {
+        gap: 40px;
+    }
+}
+
+
+/* ================= LAPTOPS ================= */
+@media (max-width: 1200px) {
+
+    :root {
+        --font-size-hero: 42px;
+        --font-size-h1: 32px;
+        --font-size-h2: 26px;
+    }
+
+    .teams-logo-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+
+    .timeline {
+        max-width: 90%;
+    }
+}
+
+
+/* ================= TABLETS ================= */
+@media (max-width: 992px) {
+
+    /* Header */
+    .nav-links {
+        gap: var(--space-2);
+    }
+
+    .nav-links a {
+        font-size: var(--font-size-body);
+    }
+
+    .header-title a {
+        font-size: var(--font-size-h2);
+    }
+
+    /* Hero */
+    .hero {
+        margin-bottom: 100px;
+    }
+
+    .hero-title {
+        font-size: clamp(36px, 6vw, 56px);
+    }
+
+    .hero-description {
+        max-width: 90%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-main {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Trusted logos */
+    .teams-logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+     .vertical-line::after {
+        left: 20px; 
+    }
+
+    .timeline-progress {
+        left: 20px; 
+    }
+
+    .box-left,
+    .box-right {
+        width: 100%; 
+        padding-left: 60px;
+        padding-right: 25px;
+        margin-bottom: 40px;
+        text-align: left !important;
+        left: 0;
+    }
+
+    .box-left::after,
+    .box-right::after {
+        left: 13px; 
+        right: auto; 
+    }
+
+
+    
+       .pricing-header h1 {
+        font-size: 36px;
+    }
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pricing-card-price {
+        margin: 16px 0;
+    }
+
+    .price-amount {
+        font-size: 36px;
+    }
+}
+
+
+/* ================= LARGE PHONES ================= */
+@media (max-width: 768px) {
+
+    :root {
+        --font-size-hero: 34px;
+        --font-size-h1: 26px;
+        --font-size-h2: 22px;
+        --font-size-h3: 18px;
+        --font-size-body: 15px;
+    }
+
+    /* Header layout stack */
+    .inner-content {
+        flex-direction: column;
+        gap: var(--space-2);
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: var(--space-2);
+    }
+
+    .box-model {
+        padding: 6px 18px;
+        font-size: var(--font-size-body);
+    }
+
+    /* Forms */
+    form {
+        padding: 30px 20px;
+    }
+
+    .form-pos {
+        margin: var(--space-3);
+    }
+
+    /* Login popup */
+    #login_message {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    /* Logos */
+    .teams-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    /* Hero spacing */
+    .hero-content {
+        margin-top: 100px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+        gap: var(--space-2);
+        text-align: center;
+    }
+
+    .footer-copy {
+        margin-top: var(--space-3);
+    }
+
+        .profile-container {
+        padding: 40px 20px;
+    }
+
+    .profile-header h2 {
+        font-size: 36px;
+    }
+
+    .cv-form {
+        padding: 24px;
+    }
+
+    .cv-form h2 {
+        font-size: 24px;
+    }
+
+    
+    .cv-search-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-search-form button {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+
+
+
+
+
+
+/* ================= SMALL PHONES ================= */
+@media (max-width: 480px) {
+
+    :root {
+        --space-5: 32px;
+        --space-6: 48px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .top-notification {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .btn-main {
+        width: 100%;
+    }
+
+    .teams-logo-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .account-shape {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .nav-dropdown {
+        width: 170px;
+        right: -20px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .teams-logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-logo-styling {
+        height: 55px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .teams-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-logo-styling {
+        height: 50px;
+    }
+}
